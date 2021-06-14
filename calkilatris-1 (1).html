@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<style>
+        body{
+      font-family: Comic sans MS;
+      
+      
+       
+       background: lightblue url("Designs.jpg") ;
+       width: 100%;
+       height: 100%;
+
+        }
+    
+        div {
+      background-color: none;
+      width: 300px;
+      border-radius: 200px;
+      padding:100px;
+    
+    }
+    #first{
+      background-color:   #956a26;
+      border-radius: 15px;
+      width: 80px;
+      height: 40px;
+
+
+    }
+    #second {
+      background-color:  #f28b2c;
+      border-radius: 15px;
+      width: 80px;
+      height: 40px;
+    }
+	#rst{
+		background-color: #feefd8;
+		border-radius: 15px;
+		width: 250px;
+		height: 30px;
+	}
+	#rse{
+		background-color: #feefd8;
+		border-radius: 15px;
+		width: 250px;
+		height: 30px;
+	}
+        </style>
+<center><body>
+	<div>
+	
+	<input type="text" id="rst" value="" disabled>	<input type="text" id="rsty" placeholde="donner y" value="" style="visibility:hidden;"><br>
+	<input type="text" id="rse" value="" disabled><br><br>
+
+	<input id="second"type="button" name="" onclick="lenm()" value="b">
+	<input id="first" type="button" name="" onclick="n0()" value="0">
+	<input id="first" type="button" name="" onclick="n1()" value="1">
+	<input id="first" type="button" name="" onclick="n2()" value="2">
+	<input id="first" type="button" name="" onclick="n3()" value="3"><br>
+	<input id="first" type="button" name="" onclick="n4()" value="4">
+	<input id="first" type="button" name="" onclick="n5()" value="5">
+	<input id="first" type="button" name="" onclick="n6()" value="6">
+	<input id="first" type="button" name="" onclick="n7()" value="7">
+	<input id="first" type="button" name="" onclick="n8()" value="8"><br>
+	<input id="first" type="button" name="" onclick="n9()" value="9">
+	<input id="second" type="button" name="" onclick="point()" value=".">
+	<input id="second" type="button" name="" onclick="egal()" value="=">
+	<input id="second" type="button" name="" onclick="plus()" value="+">
+	<input id="second" type="button" name="" onclick="moin()" value="-"><br>
+    <input id="second" type="button" name="" onclick="fois()" value="*">
+	<input id="second" type="button" name="" onclick="mod()" value="%">
+	<input id="second" type="button" name="" onclick="sur()" value="/">
+	<input id="second" type="button" name="" onclick="par1()" value="(">
+	<input id="second" type="button" name="" onclick="par2()" value=")">
+	<input id="second" type="button" name="" onclick="pow()" value="x ^ y">
+	<input id="second" type="button" name="" onclick="cosinus()" value="cos">
+	<input id="second" type="button" name="" onclick="sinus()" value="sin">
+	<input id="second" type="button" name="" onclick="tang()" value="tang">
+	<input id="second" type="button" name="" onclick="abs()" value="abs">
+	<input id="second" type="button" name="" onclick="PGCD()" value="PGCD">
+	<input id="second" type="button" name="" onclick="PPCM()" value="PPCM">
+	<input id="second" type="button" name="" onclick="Premier()" value="premier">
+	<input id="second" type="button" name="" onclick="parfait()" value="parfait">
+</div>
+
+<script>
+	e=""
+function n0() {
+	e=e+"0";
+	document.getElementById("rst").value = e
+}
+function n1(){
+	e=e+"1"
+	document.getElementById("rst").value=e
+}
+function n2(){
+	e=e+"2"
+	document.getElementById("rst").value=e
+
+}
+function n3(){
+	e=e+"3"
+	document.getElementById("rst").value=e
+}
+function n4(){
+	e=e+"4"
+	document.getElementById("rst").value=e
+}
+function n5(){
+	e=e+"5"
+	document.getElementById("rst").value=e
+}
+function n6(){
+	e=e+"6"
+	document.getElementById("rst").value=e
+}
+function n7(){
+	e=e+"7"
+	document.getElementById("rst").value=e
+}
+function n8(){
+	e=e+"8"
+	document.getElementById("rst").value=e
+}
+function n9(){
+	e=e+"9"
+	document.getElementById("rst").value=e
+}
+function plus(){
+	e=e+"+"
+	document.getElementById("rst").value=e
+}
+function moin(){
+	e=e+"-"
+	document.getElementById("rst").value=e
+}
+function point(){
+	e=e+"."
+	document.getElementById("rst").value=e
+}
+function par1(){
+	e=e+"("
+	document.getElementById("rst").value=e
+}
+function par2(){
+	e=e+")"
+	document.getElementById("rst").value=e
+}
+function fois(){
+	e=e+"*"
+	document.getElementById("rst").value=e
+}
+function mod(){
+	e=e+"%"
+	document.getElementById("rst").value=e
+}
+function sur(){
+	e=e+"/"
+	document.getElementById("rst").value=e
+}
+function egal(){
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= eval(n)
+}
+function lenm(){
+	e=e.substring(0, e.length-1);
+	document.getElementById("rst").value=e
+}
+function abs(){
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= Math.abs(n)
+}
+function cosinus(){
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= Math.cos(n)
+}
+function sinnus(){
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= Math.sin(n)
+}
+function tang(){
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= Math.tan(n)
+}
+function pow(){
+	document.getElementById("rsty").style.visibility = "visible";
+	document.getElementById("rst").style.width = "25px";
+	document.getElementById("rsty").style.width = "25px";
+	y=document.getElementById("rsty").value
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= Math.pow(n, y)
+}
+function PGCD(){
+	document.getElementById("rsty").style.visibility = "visible";
+	document.getElementById("rst").style.width = "25px";
+	document.getElementById("rsty").style.width = "25px";
+	y=document.getElementById("rsty").value
+    n=	document.getElementById("rst").value
+	while (y>0) {   
+		r=n%y;  
+		n=y;  
+		y=r;  
+	}   
+	return n;
+	console.log(n)
+	document.getElementById("rse").value= n
+}
+function PPCM(){
+	document.getElementById("rsty").style.visibility = "visible";
+	document.getElementById("rst").style.width = "122px";
+	document.getElementById("rsty").style.width = "122px";
+	y=document.getElementById("rsty").value
+    n=	document.getElementById("rst").value
+    x=	document.getElementById("rst").value
+	while (y>0) {   
+		r=n%y;  
+		n=y;  
+		y=r;  
+	}   
+	return n;
+	ppcm=(x*y)/n
+	document.getElementById("rse").value= ppcm
+}
+function premier(){
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= eval(n)
+}
+function parfait(){
+    n=	document.getElementById("rst").value
+	document.getElementById("rse").value= eval(n)
+}
+</script>
+
+</body><center>
+</html>
